@@ -4,7 +4,7 @@ A basic web-based calculator with computation history - written in JavaScript, H
 
 ## Requirements & Constraints
 
-The following requirements and constraints were listed along with the assignment.
+_The following requirements and constraints were listed along with the assignment._
 
 The calculator itself should behave as all basic calculators do (e.g., you may want to include a `+/-` button to change the sign of a value). There is a `C` button that will reset the state of the calculator to start a new calculation. Input to the calculator can be provided either by pressing the buttons or by typing numbers (including decimal numbers) into the calculation text field.
 
