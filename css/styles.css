@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+header,
+.container input,
+#list { font-family: 'VT323', monospace; }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin: 0;
+    background-color: lightgray;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -25px;
+    font-size: 25px;
+    text-align: left;
+    margin-right: 125px;
+    margin-left: -125px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.container {
+    background: rgb(183, 183, 183);
+    padding: 12px;
+    border-radius: 30px;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+#display {
+    display: flex;
+    border-radius: 25px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 12px;
+    padding-left: 12px;
+    background-color: white;
+    height: 60px;
+    font-size: 48px;
+    border: 2px solid black;
+    margin-bottom: 12px;
+    width: 275px;
+    text-align: right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#calculator {
+    margin-left: -125px;
+}
+
+#history {
+    height: 498px;
+    display: none;
+    z-index: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 225px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 0.6s ease-in-out;
+    position: absolute;
+}
+
+#history.show {
+    opacity: 1;
+    display: flex;
+    transform: translateX(135%);
+}
+
+#list {
+    font-size: 30px;
+    background-color: white;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 2px solid black;
+    width: 200px;
+    height: 400px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+#list div {
+    padding-left: 3px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#list div:hover {
+    cursor: pointer;
+    background-color: rgb(160, 249, 255);
+}
+
+/* Cool scrollbar stuff from
+https://stackoverflow.com/questions/29866759/how-do-i-add-a-margin-to-a-css-webkit-scrollbar
+*/
+
+#list::-webkit-scrollbar { width: 8px; }
+
+#list::-webkit-scrollbar-track { background-color: white; }
+
+#list::-webkit-scrollbar-thumb {
+    background: rgb(87, 87, 87);
+    background-clip: content-box;
+    border: 3px solid transparent;
+}
+
+#hist-btn-cl {
+    display: flex;
+    flex-direction: column;
+}
+
+#hist-btn-cl button {
+    height: 65px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    gap: 6px;
+}
+
+.buttons button {
+    flex-grow: 1;
+    flex-basis: 20%;
+    font-size: 20px;
+    font-weight: bold;
+    height: 65px;
+    border-radius: 25px;
+}
+
+button { transition-duration: 0.1s; }
+
+button:hover { 
+    cursor: pointer;
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+}
+
+.btn-num {
+    background-color: rgb(134, 134, 134);
+    color: white;
+}
+
+.btn-num:hover { background-color: rgb(192, 192, 192); }
+
+.btn-sign,
+.btn-op { background-color: rgb(255, 170, 32); }
+
+.btn-sign:hover,
+.btn-op:hover { background-color: rgb(255, 197, 103); }
+
+.btn-eq { background-color:rgb(69, 240, 69); }
+
+.btn-eq:hover { background-color:rgb(103, 255, 103); }
+
+.btn-cl { background-color: rgb(255, 0, 0); }
+
+.btn-cl:hover { background-color: rgb(255, 77, 77); }
+
+#hist-btn-cl button,
+.btn-hist,
+.btn-del { background-color: gainsboro; }
+
+#hist-btn-cl button:hover,
+.btn-hist:hover,
+.btn-del:hover { background-color: rgb(249, 249, 249); }

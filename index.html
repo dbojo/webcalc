@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>WebCalc</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <header>
+                <h1>WebCalc</h1>
+                <h2>
+                    <b>keyboard hotkeys</b><br>
+                    <b>----------------</b><br>
+                    &nbspclear: c<br>
+                    delete: backspace<br>
+                    equals: enter<br>
+                </h2>
+            </header>
+    
+            <div class="container" id="calculator">
+                <div id="output">
+                    <input type="text" id="display" />
+                </div>
+                <div class="buttons">
+                    <button class="btn-hist">HISTORY</button>
+                    <button class="btn-del">DEL</button>
+                    <button class="btn-cl">CL</button>
+                    <button class="btn-num" data-num="7">7</button>
+                    <button class="btn-num" data-num="8">8</button>
+                    <button class="btn-num" data-num="9">9</button>
+                    <button class="btn-op" data-num="/">÷</button>
+                    <button class="btn-num" data-num="4">4</button>
+                    <button class="btn-num" data-num="5">5</button>
+                    <button class="btn-num" data-num="6">6</button>
+                    <button class="btn-op" data-num="*">×</button>
+                    <button class="btn-num" data-num="1">1</button>
+                    <button class="btn-num" data-num="2">2</button>
+                    <button class="btn-num" data-num="3">3</button>
+                    <button class="btn-op" data-num="-">–</button>
+                    <button class="btn-sign">+ / –</button>
+                    <button class="btn-num" data-num="0">0</button>
+                    <button class="btn-num" data-num=".">.</button>
+                    <button class="btn-op" data-num="+">+</button>
+                    <button class="btn-eq" data-num="=">=</button>
+                </div>
+            </div>
+    
+            <div class="container" id="history">
+                <div id="list"></div>
+                <div id="hist-btn-cl">
+                    <button>CLEAR HISTORY</button>
+                </div>
+            </div>
+        </main>
+    
+        <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>
