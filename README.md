@@ -30,5 +30,5 @@ These are additional constraints your implementation must follow:
 * You will have a single HTML file called `index.html`.
 * Your CSS and JavaScript should be in external files. No embedded or inline CSS/JS.
 * You can use CSS fonts if you would like. No other external JavaScript or CSS is allowed.
-* Use of `eval()` is not allowed. Parsing arithmetic expressions is not required, and attempting to do so will make your implementation harder. See test cases below.
+* Use of `eval()` is not allowed. Parsing arithmetic expressions is not required, and attempting to do so will make your implementation harder.
 * Use flexbox or CSS grid as appropriate to construct the layout of your calculator. Do not use a `<table>` for layout.
